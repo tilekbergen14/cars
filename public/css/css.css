@@ -1,0 +1,288 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #242424;
+  }
+* {
+  box-sizing: border-box;
+}
+.bg-image {
+  height: 50%; 
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  object-fit: cover;
+}
+.bg-text {
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.4); 
+  color: white;
+  font-weight: bold;
+  font-size: 80px;
+  border: 10px solid #f1f1f1;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 300px;
+  padding: 20px;
+  text-align: center;
+}
+  body {margin:0;
+}
+
+.icon-bar {
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  overflow: auto;
+}
+
+.icon-bar a {
+  float: left;
+  width: 20%;
+  text-align: center;
+  padding: 12px 0;
+  transition: all 0.3s ease;
+  color: rgb(0, 0, 0);
+  font-size: 36px;
+}
+
+.icon-bar a:hover {
+  background-color: rgb(97, 97, 97);
+}
+
+.active {
+  background-color: #ffffff;
+}
+/* Below line is used for online Google font */
+@import url(http://fonts.googleapis.com/css?family=Droid+Serif);
+h2{
+text-align: center;
+font-size: 24px;
+}
+hr{
+margin-bottom: 30px;
+}
+div.container{
+width: 300px;
+height: 100px;
+margin:50px auto;
+font-family: 'Droid Serif', serif;
+position:relative;
+}
+div.main{
+width: 320px;
+float:left;
+padding: 10px 40px 100px;
+background-color: rgba(255, 255, 255, 0.65);
+border: 15px solid rgb(255, 255, 255);
+box-shadow: 0 0 10px;
+border-radius: 2px;
+font-size: 13px;
+}
+input[type=text],[type=password] {
+width: 97.7%;
+height: 34px;
+padding-left: 5px;
+margin-bottom: 20px;
+margin-top: 8px;
+box-shadow: 0 0 5px #000000;
+border: 2px solid #ffffff;
+color: #000000;
+font-size: 16px;
+}
+label{
+color: #000000;
+text-shadow: 0 1px 0 #fff;
+font-size: 14px;
+font-weight: bold;
+}
+#register {
+font-size: 20px;
+margin-top: 15px;
+background: linear-gradient(#4b4a4a 5%, #242424 100%);
+border: 1px solid #000000;
+padding: 7px 35px;
+color: rgb(255, 255, 255);
+text-shadow: 0px 1px 0px #000000;
+font-weight: bold;
+border-radius: 2px;
+cursor: pointer;
+width: 100%;
+
+}
+#register:hover{
+background: linear-gradient(#5c5c5c 5%, #949393 100%);
+}
+.aza{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.asd{
+  text-align: center;
+}
+.item > img{
+  height: 264px !important;
+}
+.car-img:hover{
+  transform: scale(1.2);
+}
+#brick {
+  width: 15px;
+  height: 20px;
+  background: rgb(255, 255, 255);
+  position: relative;
+  cursor: pointer;
+}
+
+#path {
+  outline: 3px solid #fad2ff;
+  width: 1743px;
+  height: 20px;
+}
+@keyframes stroke-offset{
+	100% {stroke-dashoffset: -35%;}
+}
+.container {
+  padding: 0 15px;
+}
+
+@media (min-width: 575.98px){
+  .container {
+    max-width: 540px;
+    margin: auto;
+    padding: 0;
+  }
+}
+
+@media (min-width: 767.98px){
+  .container {
+    max-width: 720px;	
+  }
+}
+
+@media (min-width: 991.98px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1199.98px){
+  .container {
+    max-width: 1140px;
+  }
+}
+.bla{
+opacity: 0.01;
+}
+
+  
+button, button::after {
+  width: 380px;
+  height: 86px;
+  font-size: 36px;
+  font-family: 'Bebas Neue', cursive;
+  background: linear-gradient(45deg, transparent 5%, #f658d4 5%);
+  border: 0;
+  color: #fff;
+  letter-spacing: 3px;
+  line-height: 88px;
+  box-shadow: 6px 0px 0px #00E6F6;
+  outline: transparent;
+  position: relative;
+}
+
+button::after {
+  --slice-0: inset(50% 50% 50% 50%);
+  --slice-1: inset(80% -6px 0 0);
+  --slice-2: inset(50% -6px 30% 0);
+  --slice-3: inset(10% -6px 85% 0);
+  --slice-4: inset(40% -6px 43% 0);
+  --slice-5: inset(80% -6px 5% 0);
+  
+  content: 'AVAILABLE NOW';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, transparent 3%, #00E6F6 3%, #00E6F6 5%, #eb5bdf 5%);
+  text-shadow: -3px -3px 0px #F8F005, 3px 3px 0px #00E6F6;
+  clip-path: var(--slice-0);
+}
+
+button:hover::after {
+  animation: 1s glitch;
+  animation-timing-function: steps(2, end);
+}
+
+@keyframes glitch {
+  0% {
+    clip-path: var(--slice-1);
+    transform: translate(-20px, -10px);
+  }
+  10% {
+    clip-path: var(--slice-3);
+    transform: translate(10px, 10px);
+  }
+  20% {
+    clip-path: var(--slice-1);
+    transform: translate(-10px, 10px);
+  }
+  30% {
+    clip-path: var(--slice-3);
+    transform: translate(0px, 5px);
+  }
+  40% {
+    clip-path: var(--slice-2);
+    transform: translate(-5px, 0px);
+  }
+  50% {
+    clip-path: var(--slice-3);
+    transform: translate(5px, 0px);
+  }
+  60% {
+    clip-path: var(--slice-4);
+    transform: translate(5px, 10px);
+  }
+  70% {
+    clip-path: var(--slice-2);
+    transform: translate(-10px, 10px);
+  }
+  80% {
+    clip-path: var(--slice-5);
+    transform: translate(20px, -10px);
+  }
+  90% {
+    clip-path: var(--slice-1);
+    transform: translate(-10px, 0px);
+  }
+  100% {
+    clip-path: var(--slice-1);
+    transform: translate(0);
+  }
+}
+.divClass
+{
+    margin-top:20px;
+    padding:10px;
+    text-align:center;
+    background-color:rgb(146, 146, 146);
+    border:solid 1px;
+    aspect-ratio: 16 / 9;
+    display: flex;
+}
+.car-img-card{
+  width: 100%;
+  object-fit: cover;
+}
+.as{
+  text-align: right;
+}
+body{ 
+  padding:2% 3% 10% 3%; 
+  text-align:center; 
+  } 
+ 
